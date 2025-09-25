@@ -1,5 +1,6 @@
 package properties.tests;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -7,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static java.lang.String.format;
 
+@Feature("Выбор BrowserA")
 public class SystemPropertiesTests {
 
     @Test
