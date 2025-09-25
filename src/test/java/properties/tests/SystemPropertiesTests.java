@@ -1,5 +1,6 @@
 package properties.tests;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -8,6 +9,7 @@ import static java.lang.String.format;
 public class SystemPropertiesTests {
 
     @Test
+    @Step("Параметр тест")
     void systemPropertiesTest() {
         String browser = System.getProperty("browser");
 
@@ -15,6 +17,7 @@ public class SystemPropertiesTests {
     }
 
     @Test
+    @Step("Параметр тест 1")
     void systemProperties1Test() {
         System.setProperty("browser", "chrome");
         String browser = System.getProperty("browser");
@@ -23,6 +26,7 @@ public class SystemPropertiesTests {
     }
 
     @Test
+    @Step("Параметр тест 2")
     void systemProperties2Test() {
         String browser = System.getProperty("browser", "mozilla");
 
@@ -30,6 +34,7 @@ public class SystemPropertiesTests {
     }
 
     @Test
+    @Step("Параметр тест 3")
     void systemProperties3Test() {
         System.setProperty("browser", "chrome");
         String browser = System.getProperty("browser", "mozilla");
@@ -39,6 +44,7 @@ public class SystemPropertiesTests {
 
     @Test
     @Tag("property")
+    @Step("Параметр тест 4")
     void systemProperties4Test() {
         String browser = System.getProperty("browser", "mozilla");
 
@@ -52,6 +58,7 @@ public class SystemPropertiesTests {
 
     @Test
     @Tag("hello")
+    @Step("Параметр тест 5")
     void systemProperties5Test() {
         String name = System.getProperty("name", "default student");
         String message = format("Hello, %s!", name);
