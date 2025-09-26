@@ -20,7 +20,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationTests extends TestBase {
 
-    @BeforeAll
+   /* @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
@@ -37,7 +37,7 @@ public class RegistrationTests extends TestBase {
         Configuration.browserCapabilities = capabilities;
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-    }
+    } */
 
     @AfterEach
     void addAttachments() {
